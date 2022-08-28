@@ -1,8 +1,8 @@
-﻿using RoomBookingApp.Core.Domain;
+﻿using RoomBookingApp.Domain;
 
 namespace RoomBookingApp.Core.Services;
 
-public interface IBookingService
+public interface IRoomBookingService
 {
     void Save(RoomBooking roomBooking);
     IEnumerable<Room> GetAvailableRooms(DateTime date);

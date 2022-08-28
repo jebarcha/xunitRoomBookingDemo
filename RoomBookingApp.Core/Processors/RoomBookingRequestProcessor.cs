@@ -1,14 +1,15 @@
-﻿using RoomBookingApp.Core.Domain;
-using RoomBookingApp.Core.Models;
+﻿using RoomBookingApp.Core.Models;
 using RoomBookingApp.Core.Services;
+using RoomBookingApp.Domain.Models;
+using RoomBookingApp.Domain;
 
 namespace RoomBookingApp.Core.Processors;
 
 public class RoomBookingRequestProcessor
 {
-    private readonly IBookingService _bookingService;
+    private readonly IRoomBookingService _bookingService;
 
-    public RoomBookingRequestProcessor(IBookingService bookingService)
+    public RoomBookingRequestProcessor(IRoomBookingService bookingService)
     {
         _bookingService = bookingService;
     }

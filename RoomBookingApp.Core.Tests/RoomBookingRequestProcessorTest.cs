@@ -1,9 +1,9 @@
 ﻿using Moq;
-using RoomBookingApp.Core.Domain;
 using RoomBookingApp.Core.Enums;
 using RoomBookingApp.Core.Models;
 using RoomBookingApp.Core.Processors;
 using RoomBookingApp.Core.Services;
+using RoomBookingApp.Domain;
 using Shouldly;
 using Xunit.Abstractions;
 
@@ -14,7 +14,7 @@ public class RoomBookingRequestProcessorTest
     private readonly ITestOutputHelper output;
     private readonly RoomBookingRequestProcessor _processor;
     private readonly RoomBookingRequest _request;
-    private readonly Mock<IBookingService> _roomBookingServiceMock;
+    private readonly Mock<IRoomBookingService> _roomBookingServiceMock;
     private List<Room> _availableRooms;
 
     public RoomBookingRequestProcessorTest(ITestOutputHelper output)
@@ -30,7 +30,7 @@ public class RoomBookingRequestProcessorTest
         };
         _availableRooms = new List<Room>() { new Room() { Id = 1 } };
 
-        _roomBookingServiceMock = new Mock<IBookingService>();
+        _roomBookingServiceMock = new Mock<IRoomBookingService>();
         _roomBookingServiceMock.Setup(q => q.GetAvailableRooms(_request.Date))
             .Returns(_availableRooms);
 
