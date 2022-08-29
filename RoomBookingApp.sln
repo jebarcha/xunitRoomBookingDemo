@@ -3,20 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomBookingApp.Core.Tests", "RoomBookingApp.Core.Tests\RoomBookingApp.Core.Tests.csproj", "{76A1D467-4C95-48A1-AC78-C2CAD4AE41C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoomBookingApp.Core.Tests", "RoomBookingApp.Core.Tests\RoomBookingApp.Core.Tests.csproj", "{76A1D467-4C95-48A1-AC78-C2CAD4AE41C7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0303C1C8-D1D4-4E31-BC3F-FD4479062712}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomBookingApp.Core", "RoomBookingApp.Core\RoomBookingApp.Core.csproj", "{50D266A1-C17C-48DF-9E99-19361A63E289}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoomBookingApp.Core", "RoomBookingApp.Core\RoomBookingApp.Core.csproj", "{50D266A1-C17C-48DF-9E99-19361A63E289}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomBookingApp.Persistence.Tests", "RoomBookingApp.Persistence.Tests\RoomBookingApp.Persistence.Tests.csproj", "{6FB1B9D9-68CA-4915-AA09-0B042F60027D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoomBookingApp.Persistence.Tests", "RoomBookingApp.Persistence.Tests\RoomBookingApp.Persistence.Tests.csproj", "{6FB1B9D9-68CA-4915-AA09-0B042F60027D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomBookingApp.Domain", "RoomBookingApp.Domain\RoomBookingApp.Domain.csproj", "{B4D37596-44B4-4E6D-B9C5-92E9D69A92B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoomBookingApp.Domain", "RoomBookingApp.Domain\RoomBookingApp.Domain.csproj", "{B4D37596-44B4-4E6D-B9C5-92E9D69A92B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomBookingApp.Persistence", "RoomBookingApp.Persistence\RoomBookingApp.Persistence.csproj", "{42264241-56BC-49A1-9DB2-8EC5DD8AB294}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RoomBookingApp.Persistence", "RoomBookingApp.Persistence\RoomBookingApp.Persistence.csproj", "{42264241-56BC-49A1-9DB2-8EC5DD8AB294}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomBookingApp.Api", "RoomBookingApp.Api\RoomBookingApp.Api.csproj", "{D7E4B597-818A-4602-AD83-14352C81BA2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomBookingApp.Api.Tests", "RoomBookingApp.Api.Tests\RoomBookingApp.Api.Tests.csproj", "{FEB11C11-49DC-4233-95BA-EEC7FBC3D88C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{F2C0844A-138F-4D07-B157-FCF8E0D8D422}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,9 +50,22 @@ Global
 		{42264241-56BC-49A1-9DB2-8EC5DD8AB294}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42264241-56BC-49A1-9DB2-8EC5DD8AB294}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42264241-56BC-49A1-9DB2-8EC5DD8AB294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7E4B597-818A-4602-AD83-14352C81BA2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E4B597-818A-4602-AD83-14352C81BA2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E4B597-818A-4602-AD83-14352C81BA2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E4B597-818A-4602-AD83-14352C81BA2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB11C11-49DC-4233-95BA-EEC7FBC3D88C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB11C11-49DC-4233-95BA-EEC7FBC3D88C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB11C11-49DC-4233-95BA-EEC7FBC3D88C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB11C11-49DC-4233-95BA-EEC7FBC3D88C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{76A1D467-4C95-48A1-AC78-C2CAD4AE41C7} = {F2C0844A-138F-4D07-B157-FCF8E0D8D422}
+		{6FB1B9D9-68CA-4915-AA09-0B042F60027D} = {F2C0844A-138F-4D07-B157-FCF8E0D8D422}
+		{FEB11C11-49DC-4233-95BA-EEC7FBC3D88C} = {F2C0844A-138F-4D07-B157-FCF8E0D8D422}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E1C8858-8FE8-4AF1-83FA-E0B0FB7EC2BC}
